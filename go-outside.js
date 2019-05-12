@@ -1,7 +1,8 @@
-var raining = true;
+var raining = false;
 var cold = false;
+var extremeWeatherWarning = false;
 
-var temperature = 12;
+var temperature = -42;
 
 // Evaluate if rain conditions
 if (raining) {
@@ -14,6 +15,7 @@ if (!raining) {
 // if statement to determine outfit
 if (temperature < -40 || temperature > 40) {
     console.log("Maybe going outside isn't such a great idea…");
+    extremeWeatherWarning = true;
 } else if (temperature < 0) {
       console.log("Make sure you pick out a scarf!");
 } else if (temperature < 15) {
@@ -22,4 +24,9 @@ if (temperature < -40 || temperature > 40) {
       console.log("Short sleeves are fine.");
 }
 
-console.log("Now you're ready to go outside!");
+if (extremeWeatherWarning) {
+    console.log("---Extreme Weather Warming--- \n Remain Indoors")
+} else {
+    console.log("Now you're ready to go outside!");
+}
+
