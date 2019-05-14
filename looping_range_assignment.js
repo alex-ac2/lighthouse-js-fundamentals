@@ -1,9 +1,9 @@
 function range(start, end, step) {
-      let numArray = [];
-      for (let i = start; i <= end; i += step) {
-              numArray.push(i);
-            } 
-      return numArray
+    let numArray = [];
+    for (let i = start; i <= end; i += step) {
+        numArray.push(i);
+    } 
+    return numArray
 }
 
 console.log(range(0, 10, 2));
